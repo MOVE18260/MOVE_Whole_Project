@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 인터넷 권한 선언(volley 라이브러리를 사용하기 위한 설정 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Move_Whole_Project"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <!-- usesCleartextTraffic이 true여야 http 통신이 가능하다        -->
+
+        <activity android:name=".Register_Login.Activity_Login"
+            android:exported="false"/>
+        <activity android:name=".Register_Login.Activity_Signup"
+            android:exported="false"/>
+        <activity android:name=".Register_Login.Activity_SignupDone"
+            android:exported="false"/>
+        <activity android:name=".Register_Login.YearMonthPicker"
+            android:exported="false"/>
+
+
+        <activity
+            android:name=".Register_Login.Activity_Start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Move_Whole_Project</string>
+    <string name="cancel">취소</string>
+    <string name="confirm">확인</string>
+</resources>
