@@ -37,12 +37,14 @@ dependencies {
     // volley 라이브러리 설치
     implementation 'com.android.volley:volley:1.2.1'
 
-
     // gps 라이브러리 설치 및 기능에 필요한 라이브러리 설치
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.github.pedroSG94:AutoPermissions:1.0.3'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // BottomNavigationView 라이브러리
+    implementation 'com.google.android.material:material:1.4.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
