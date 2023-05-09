@@ -5,13 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize = "30sp"
-        android:layout_gravity="center"
-        android:gravity="center_horizontal"
-        android:text="Home Fragment" />
 
+    <Button
+        android:id="@+id/btn_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카운트"
+        >
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_marginLeft="50dp"
+
+        >
+
+    </TextView>
 </LinearLayout>

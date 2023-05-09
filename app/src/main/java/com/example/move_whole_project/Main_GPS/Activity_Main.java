@@ -30,8 +30,8 @@ public class Activity_Main extends AppCompatActivity {
         // 초기 화면은 홈 프래그먼트로 설정
         getSupportFragmentManager().beginTransaction().replace(R.id.containers, homeFragment).commit();
 
-        // BottomNavigationView 기능 구현
 
+        // BottomNavigationView 기능 구현
         NavigationBarView navigationBarView = findViewById(R.id.bottom_navigationview);
         navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener(){
             @Override

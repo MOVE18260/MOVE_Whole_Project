@@ -25,7 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Move_Whole_Project"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31">
+        android:name=".AppTest"
+        tools:targetApi="31"
+        >
 
         <!-- usesCleartextTraffic이 true여야 http 통신이 가능하다 -->
         <!-- Google Map 관련 라이브러리 사용 설정 -->
