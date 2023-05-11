@@ -29,7 +29,7 @@
         android:background="@drawable/round"
         android:ems="10"
         android:hint="아이디(이메일)"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:text="" />
 
     <EditText
