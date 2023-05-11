@@ -12,18 +12,24 @@ import androidx.fragment.app.Fragment;
 import com.example.move_whole_project.AppTest;
 import com.example.move_whole_project.R;
 
+// 현재 시간을 확인하는 핸들러 및 함수
+
 
 public class HomeFragment extends Fragment {
 
     Button btn_cnt;
-    TextView tv_check;
+    private TextView tv_check, tv_time;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         btn_cnt = (Button)view.findViewById(R.id.btn_cnt);
         tv_check = (TextView) view.findViewById(R.id.tv_check);
+        tv_time = (TextView)view.findViewById(R.id.tv_time);
+
 
         btn_cnt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +38,7 @@ public class HomeFragment extends Fragment {
                 tv_check.setText(String.valueOf(AppTest.getCnt()));
             }
         });
+
 
         // Inflate the layout for this fragment
         return view;

@@ -5,6 +5,7 @@ import android.app.Application;
 public class AppTest extends Application {
     private static int cnt;
 
+
     public static int getCnt() {
         return cnt;
     }
@@ -12,5 +13,7 @@ public class AppTest extends Application {
     public static void count() {
         cnt++;
     }
+
+
 
 }

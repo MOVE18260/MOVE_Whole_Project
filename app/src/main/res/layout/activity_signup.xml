@@ -58,8 +58,9 @@
         android:layout_marginBottom="20dp"
         android:height="48dp"
         android:background="@drawable/round"
-        android:textAlignment="center"
-        android:hint="아이디(이메일)">
+        android:hint="아이디(이메일)"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center">
 
     </EditText>
 
