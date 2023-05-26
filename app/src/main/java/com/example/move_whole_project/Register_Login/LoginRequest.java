@@ -1,42 +1,26 @@
 package com.example.move_whole_project.Register_Login;
 
-import androidx.annotation.Nullable;
+import android.util.Log;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
-import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.json.JSONObject;
 
 // create construct => 2번째거 선택(alt + enter)
 
-public class LoginRequest extends StringRequest {
+public class LoginRequest extends JsonObjectRequest {
     // url 설정(서버 url)(PHP 파일 연동)
 
-    final static private String URL = "http://ghzzzang81.dothome.co.kr/Login.php";
-
-    // 해쉬맵 생성 (인텐트 풋 엑스트라와 비슷한것)
-    private Map<String, String> map;
+    final static private String URL = "http://192.168.128.48:3000/signIn";
 
     // 생성자 만들기, 로그인에서 입력받는 데이터들 (아이디, 패스워드)
-    public LoginRequest(String userID, String userPass, Response.Listener<String> listener) {
-        // 서버 전송 방식 (POST 방식)
-        super(Method.POST, URL, listener,null);
+    public LoginRequest(JSONObject jsonBody, Response.Listener<JSONObject> listener, Response.ErrorListener errorListener) {
+        // 서버 전송 방식 (GET 방식)
+        super(Method.POST, URL, jsonBody, listener, errorListener);
 
-
-        map = new HashMap<>();
-        map.put("userID", userID);
-        map.put("userPass", userPass);
+        Log.d("보낸 데이터",jsonBody.toString());
 
     }
 
-    // ctrl + o => getParams map 형태 가져오기
-
-
-    @Nullable
-    @Override
-    protected Map<String, String> getParams() throws AuthFailureError {
-        return map;
-    }
 }
