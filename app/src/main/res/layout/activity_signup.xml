@@ -16,10 +16,9 @@
         android:text= "회원가입"
         android:textAlignment="center"
         android:textSize="34sp"
-        android:layout_marginBottom="20dp">
-
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/neodunggeunmoproregular">
     </TextView>
-
 
 
 
@@ -33,7 +32,8 @@
         android:height="48dp"
         android:background="@drawable/round"
         android:textAlignment="center"
-        android:hint="닉네임">
+        android:hint="닉네임"
+        android:fontFamily="@font/neodunggeunmoproregular">
 
     </EditText>
 
@@ -48,7 +48,8 @@
         android:background="@drawable/round"
         android:hint="아이디(이메일)"
         android:inputType="textEmailAddress"
-        android:textAlignment="center">
+        android:textAlignment="center"
+        android:fontFamily="@font/neodunggeunmoproregular">
 
     </EditText>
 
@@ -63,7 +64,8 @@
         android:background="@drawable/round"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:hint="비밀번호">
+        android:hint="비밀번호"
+        android:fontFamily="@font/neodunggeunmoproregular">
 
     </EditText>
 
@@ -78,10 +80,10 @@
         android:background="@drawable/round"
         android:inputType="textPassword"
         android:textAlignment="center"
-        android:hint="비밀번호 확인">
+        android:hint="비밀번호 확인"
+        android:fontFamily="@font/neodunggeunmoproregular">
 
     </EditText>
-
 
 
     <Spinner
@@ -116,8 +118,8 @@
         android:layout_marginBottom="5dp"
         android:height="48dp"
         android:text = "생년월일선택"
+        android:fontFamily="@font/neodunggeunmoproregular"
         >
-
     </Button>
 
 
@@ -132,6 +134,7 @@
         android:layout_marginBottom="2dp"
         android:height="48dp"
         android:text="회원가입"
+        android:fontFamily="@font/neodunggeunmoproregular"
         >
     </Button>
 

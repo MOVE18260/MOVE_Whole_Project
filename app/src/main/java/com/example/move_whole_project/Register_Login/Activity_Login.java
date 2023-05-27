@@ -79,15 +79,12 @@ public class Activity_Login extends AppCompatActivity {
                             // try~catch 로 이를 감싸준다.
                             try {
                                 JSONObject jsonObject = response;
-                                boolean success = jsonObject.getBoolean("success"); // 서버 통신이 잘되었는지 안되었는지 알려준다. php에 있는 값
+                                boolean success = jsonObject.getBoolean("success"); // 서버 통신이 잘되었는지 안되었는지 알려준다.
 
                                 if(success){ // 로그인에 성공한 경우
 
                                     // php 파일에서 키값으로 설정한대로 getString 안을 채워준다.
                                     // key 값으로 json 값을 가져온다.
-                                    String user_email = jsonObject.getString("email");
-                                    String user_password = jsonObject.getString("password");
-
 
                                     Toast.makeText(getApplicationContext(), "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
 

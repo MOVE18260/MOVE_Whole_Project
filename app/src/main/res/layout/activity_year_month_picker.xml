@@ -39,16 +39,17 @@
             android:text="@string/cancel"
             android:layout_weight="1"
             android:textAllCaps="false"
+            android:fontFamily="@font/neodunggeunmoproregular"
             />
 
         <Button
             android:id="@+id/btn_confirm"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/confirm"
             android:textAllCaps="false"
-            />
+            android:fontFamily="@font/neodunggeunmoproregular"/>
 
     </LinearLayout>
 

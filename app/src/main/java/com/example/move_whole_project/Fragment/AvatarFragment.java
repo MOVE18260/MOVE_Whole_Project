@@ -9,15 +9,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.move_whole_project.R;
 
-public class RecordFragment extends Fragment {
-
-    @Override
+// 신경 안쓰셔도 됩니당
+public class AvatarFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_record, container, false);
-
-
+        View view = inflater.inflate(R.layout.fragment_avatar, container, false);
+        return view;
     }
-
 }

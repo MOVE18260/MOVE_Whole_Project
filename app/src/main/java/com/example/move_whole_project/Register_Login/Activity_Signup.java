@@ -160,8 +160,6 @@ public class Activity_Signup extends AppCompatActivity {
                 // 모든 값들이 입력 되었을때
 
                 else{
-
-
                    // 모든 값들이 입력되도 이상한 값이 있을 수 있다
                    // 그럴때를 대비해 다시 액티비티를 시작할 수 있도록 한다.
 
